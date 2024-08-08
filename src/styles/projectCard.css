@@ -1,0 +1,89 @@
+:root{
+    --Poppins-font: 'Poppins',sans-serif;
+    --cursive-font: 'Comfortaa',cursivv;
+    --Roboto-font: 'Roboto',sans-serif;
+    --diff-color: #14b8a6;
+    --txt-light: #ececec;
+    --txt-dark: #b5b5b5;
+    --pointer-cur: url(../assets/Icons/cursor-pointer.png), auto;
+}
+
+.card {
+    height: 15vmax;
+    width: 28vmax;
+    background: linear-gradient(-45deg ,rgba(96, 96, 96, 0.1), rgba(63, 63, 63, 0.1));
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.card:hover{
+    background-color: rgba(96, 96, 96, 0.2);
+}
+
+.card:hover .project-link{
+    color: #131313;
+}
+
+.img {
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.project-ico-img{
+    width: 2vmax;
+    filter: invert(0%) sepia(47%) saturate(5215%) hue-rotate(51deg) brightness(89%) contrast(91%);
+    pointer-events: none;
+    user-select: none;
+}
+
+.heading {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.project-inner-heading{
+    color: #0c0c0c;
+    font-family: var(--Poppins-font);
+    font-size: 1.5vmax;
+    font-weight: 500;
+}
+
+.description {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.project-description{
+    font-family: var(--Poppins-font);
+    font-size: .95vmax;
+    color: #151515;
+}
+
+.link{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 1.5vmax;
+}
+
+.project-link{
+    color: #7e7e7e;
+    font-family: var(--Poppins-font);
+    font-size: 1vmax;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.project-link:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,45 @@
+:root{
+    --Poppins-font: 'Poppins',sans-serif;
+    --cursive-font: 'Comfortaa',cursivv;
+    --Roboto-font: 'Roboto',sans-serif;
+    --diff-color: #14b8a6;
+    --txt-light: #ececec;
+    --txt-dark: #b5b5b5;
+    --pointer-cur: url(../assets/Icons/cursor-pointer.png), auto;
+    --pointer-txt: url(../assets/Icons/text.png), auto;
+}
+
+.smoothscroll{
+    position: absolute;
+    right: 0;
+    margin-right: 2vmax;
+    top: 0;
+    margin-top: 2vmax;
+    height: 3vmax;
+    width: 3vmax;
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: var(--pointer-cur);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    animation: smooth 2s infinite;
+}
+
+.smoothscroll:hover{
+    background-color: #fff;
+}
+
+.smoothscroll:hover .ico{
+    filter: invert(4%) sepia(6%) saturate(17%) hue-rotate(314deg) brightness(93%) contrast(93%);
+}
+
+.ico{
+    height: 60%;
+    width: 60%;
+    background-image: url(../assets/Icons/up-arrow.png);
+    background-size: cover;
+    background-position: center;
+    filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(232deg) brightness(106%) contrast(101%);
+}

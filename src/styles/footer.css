@@ -1,0 +1,130 @@
+:root {
+    --Poppins-font: 'Poppins', sans-serif;
+    --Italiana-font: "Italiana", sans-serif;
+    --diff-color: #14b8a6;
+    --txt-light: #ececec;
+    --txt-dark: #b5b5b5;
+    --cursor-default: url(../assets/Icons/default-cursor.png), auto;
+    --cursor-pointer: url(../assets/Icons/pointer-cursor.png), auto;
+}
+
+.footer{
+    position: relative;
+    height: 35vmax;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #646464;
+}
+
+.footer :hover{
+    cursor: var(--cursor-pointer);
+}
+
+.ftr-upr-txt-cnt{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ftr-upr-txt{
+    height: 50%;
+    width: 60%;
+    border: 1px solid #656565;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ftr-txt{
+    color: #656565;
+    font-family: var(--Poppins-font);
+    font-size: .9vmax;
+}
+
+.ftr-lwr-txt-cnt{
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ftr-nav{
+    height: 3vmax;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ftr-nav ol{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vmax;
+}
+
+.ftr-nav ol li{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.ftr-nav ol li a{
+    color: #656565;
+    text-decoration: none;
+    font-family: var(--Poppins-font);
+    font-size: 1vmax;
+    transition: 0.2s;
+    cursor: var(--cursor-pointer);
+}
+
+.ftr-nav ol li a:hover{
+    color: #c0c0c0;
+}
+
+.ftr-logo{
+    height: 18vmax;
+    width: 18vmax;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1vmax;
+}
+
+.ftr-logo-img{
+    position: relative;
+    width: 15vmax;
+}
+
+.ftr-stick{
+    content: 'Hello';
+    height: 5vmax;
+    width: 2px;
+    background-color: #656565;
+}
+
+.cpy-rgt-licence{
+    height: 3vmax;
+    width: 50%;
+    border: 1px solid #656565;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy-text{
+    color: #656565;
+    font-family: var(--Poppins-font);
+    font-size: .8vmax;
+}

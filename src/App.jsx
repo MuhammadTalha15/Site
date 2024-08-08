@@ -2,7 +2,9 @@ import { useState } from 'react'
 import './styles/App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
+import Navbar from './components/Navbar'
 import Home from './components/Home';
+import Footer from './components/Footer'
 
 
 function App() {
@@ -11,7 +13,7 @@ function App() {
   const routes = createBrowserRouter([
     {
       path: '/',
-      element: <><Home /></>
+      element: <><Navbar /><Home /><Footer /></>
     }
   ])
 
